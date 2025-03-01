@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dev Board</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="pb-20">
+    <header class="m-5 p-2">
+        <nav class="flex justify-between items-center bg-white shadow-md p-5 rounded-lg">
+            <div class="flex gap-3">
+                <img src="assets/logo.png" alt="">
+                <h1 class="text-3xl">Dev<span class="font-bold text-black">Board</span></h1>
+            </div>
+
+            <div class="flex items-center bg-gray-200 p-2 rounded-lg gap-2">
+                <img src="assets/checkbox.png" alt="">
+                <span id="Complete-Task-Count" class="ml-2 text-xl font-bold text-blue-600">23</span>
+                <img id="dynamic-bg-change" src="assets/theme-btn.png" alt="">
+            </div>
+          
+        </nav>
+    </header>
+    <main class="grid grid-cols-12 gap-3 m-5">
+        <section class="col-span-9">
+            <div class="grid grid-cols-3 gap-6 w-full ">
+                <!-- Task Assigned Box -->
+                <div class="bg-white shadow-lg p-4 rounded-xl flex items-center gap-3">
+                    <img src="assets/checkbox.png" alt="">
+                    <div>
+                        <p class="text-gray-500 text-sm">Task Assigned</p>
+                        <p id="Task-Count" class="text-2xl font-bold text-black">6</p>
+                    </div>
+                </div>
+        
+                <!-- Middle Highlight Box -->
+                <div id="discover-today" class="bg-gradient-to-r from-blue-500 to-purple-500 text-white p-6 rounded-xl flex items-center justify-center shadow-lg">
+                    <img src="assets/board.png" class="w-10 h-10 mr-2" alt="Calendar Icon">
+                    <p class="text-lg font-semibold">Discover Something New Today!</p>
+                </div>
+        
+                <!-- Real-Time Date Box -->
+                <div class="bg-white shadow-lg p-4 rounded-xl flex items-center justify-center">
+                    <div class="flex items-center gap-3">
+                        <img src="assets/calender.png" class="w-8 h-8" alt="Calendar Icon">
+                        <p id="currentDate" class="text-lg font-semibold text-gray-700"></p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Complete button -->
+            <div class="grid grid-cols-3 gap-6 mt-6">
+                <div class="card bg-white shadow-md p-5">
+                    <h3 class="text-lg font-semibold">Shop Ease</h3>
+                    <h2 class="text-xl font-bold title">Fix Mobile Button Issue</h2>
+                    <p class="mb-1">Debug using Chrome DevTools, <br> check for overlapping elements</p>
+                    <hr>
+                    <div class="flex gap-3 mt-2">
+                        <p class="text-gray-600 text-xl">Deadline: 21 March 2025</p>
+                        <button id="btn1" class="btn btn-primary complete-task">Complete</button>
+                    </div>
+                    
+                </div>
+                <div class="card bg-white shadow-md p-5">
+                    <h3 class="text-lg font-semibold">CloudSync</h3>
+                    <h2 class="text-xl font-bold title">Add Dark Mode</h2>
+                    <p class="mb-1">Store the user's preference in localStorage, <br> update CSS variables dynamically.</p>
+                    <hr>
+                    <div class="flex gap-3 mt-2">
+                        <p class="text-gray-600 text-xl">Deadline: 21 March 2025</p>
+                        <button id="btn2" class="btn btn-primary complete-task">Complete</button>
+                    </div>
+                    
+                </div>
+                <div class="card bg-white shadow-md p-5">
+                    <h3 class="text-lg font-semibold">SwiftPay</h3>
+                    <h2 class="text-xl font-bold title">Optimize  Home page</h2>
+                    <p class="mb-1">Debug using Chrome DevTools, <br> check for overlapping elements</p>
+                    <hr>
+                    <div class="flex gap-3 mt-2">
+                        <p class="text-gray-600 text-xl">Deadline: 21 March 2025</p>
+                        <button id="btn3" class="btn btn-primary complete-task">Complete</button>
+                    </div>
+                    
+                </div>
+                <div class="card bg-white shadow-md p-5">
+                    <h3 class="text-lg font-semibold">Meta</h3>
+                    <h2 class="text-xl font-bold title">Add new emoji 🤲</h2>
+                    <p class="mb-1">Debug using Chrome DevTools,<br> check for overlapping elements</p>
+                    <hr>
+                    <div class="flex gap-3 mt-2">
+                        <p class="text-gray-600 text-xl">Deadline: 21 March 2025</p>
+                        <button id="btn4" class="btn btn-primary complete-task">Complete</button>
+                    </div>
+                    
+                </div>
+                <div class="card bg-white shadow-md p-5">
+                    <h3 class="text-lg font-semibold">Google LLC</h3>
+                    <h2 class="text-xl font-bold title">Integrate OpenAI API</h2>
+                    <p class="mb-1">Debug using Chrome DevTools,<br> check for overlapping elements</p>
+                    <hr>
+                    <div class="flex gap-3 mt-2">
+                        <p class="text-gray-600 text-xl">Deadline: 21 March 2025</p>
+                        <button id="btn5" class="btn btn-primary complete-task">Complete</button>
+                    </div>
+                   
+                </div>
+                <div class="card bg-white shadow-md p-5">
+                    <h3 class="text-lg font-semibold">Glassdoar</h3>
+                    <h2 class="text-xl font-bold title">Improve Job searching </h2>
+                    <p class="mb-1">Debug using Chrome DevTools,<br> check for overlapping elements</p>
+                    <hr>
+                    <div class="flex gap-3 mt-2">
+                        <p class="text-gray-600 text-xl">Deadline: 21 March 2025</p>
+                        <button id="btn6" class="btn btn-primary complete-task">Complete</button>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+        <section class="col-span-3">
+            <div class="mt-6 card bg-white shadow-md p-5" id="Activity-Log">
+                <div class="flex gap-5">
+                    <img src="assets/activity.png" alt="">
+                    <h3 class="text-xl font-semibold">Activity Log</h3>
+                </div>
+                <button onclick="clearLog()" class="btn btn-primary mt-3" id="Clear-History">Clear History</button>
+                <div id="activityLog" class="text-gray-600 mt-2">No activity yet...</div>
+            </div>
+        </section>
+    </main>
+    <script src="script/date.js"></script>
+    <script src="script/dev.js"></script>
+    <script src="script/bg.js"></script>
+    <script src="script/discover.js"></script>
+</body>
+</html>
