@@ -14,20 +14,21 @@
         <nav class="flex justify-between items-center bg-white shadow-md p-5 rounded-lg">
             <div class="flex gap-2">
                 <img src="assets/logo.png" alt="">
-                <h1 class="text-3xl">Question <span class="font-bold text-black">Board</span></h1>
+                <h1 class="text-3xl">DEV<span class="font-bold text-black">Board</span></h1>
             </div>
 
             <div id="go" class="p-2 rounded-lg">
-                <button class="btn btn-primary text-2xl w-44">Go back</button>
+                <button class="btn btn-primary text-2xl w-44">Back to desk</button>
             </div>
 
         </nav>
     </header>
-    <main class="m-5 bg-gray-100 shadow-md p-2 rounded-lg grid gap-1">
-        <div class="p-4">
+    <main class="p-4">
+        <div class="m-5 bg-gray-100 shadow-lg p-2 rounded-lg">
             <h2 class="font-bold text-2xl">Question-1: What are the different ways to select an element in the DOM?</h2>
+            <hr> <hr> <hr>
             <p>
-                <ul class="text-xl my-3">
+                <ul class="text-xl my-3 pl-3">
                     <li>Using getElementById.</li>
                     <li>Using getElementsByClassName.</li>
                     <li>Using getElementsByTagName.</li>
@@ -35,32 +36,36 @@
                     <li>Using querySelectorAll.</li>
                 </ul>
             </p>
-            <hr> <hr> <hr>
+            
         </div>
-        <div class="p-4"> <h2 class="font-bold text-2xl">Question-2: What is the difference between innerHTML, innerText, and textContent ?</h2>
+
+        <div class="m-5 bg-gray-100 shadow-lg p-2 rounded-lg"> <h2 class="font-bold text-2xl">Question-2: What is the difference between innerHTML, innerText, and textContent ?</h2>
+            <hr> <hr> <hr>
             <p>
-                <ul class="text-xl my-3">
+                <ul class="text-xl my-3 pl-3">
                     <li>innerHtml returns all text, including html tags, that is contained by an element.</li>
                     <li>innerText returns all text contained by an element and all its child elements.</li>
                     <li>textContents is all text contained by an element and all its children that are for formatting purposes only.</li>
                 </ul>
             </p>
-         <hr> <hr> <hr>
         </div>
-        <div class="p-4"> <h2 class="font-bold text-2xl">Question-3: What is event delegation in the DOM?</h2>
-            <p class="text-xl my-3">Event delegation is the process of using event propagation (bubbling) to handle events at a higher level in <br>
+
+        <div class="m-5 bg-gray-100 shadow-lg p-2 rounded-lg"> <h2 class="font-bold text-2xl">Question-3: What is event delegation in the DOM?</h2>
+            <hr> <hr> <hr>
+            <p class="text-xl my-3 pl-3">Event delegation is the process of using event propagation to handle events at a higher level in <br>
                 the DOM than the element on which the event originated.</p>
-                <hr> <hr> <hr>
             </div>
-        <div class="p-4"> <h2 class="font-bold text-2xl">Question-4: What is event bubbling in the DOM?</h2>
-            <p class="text-xl my-3">Event bubbling is a type of DOM event propagation where the event first triggers on the innermost target <br>
+
+        <div class="m-5 bg-gray-100 shadow-lg p-2 rounded-lg"> <h2 class="font-bold text-2xl">Question-4: What is event bubbling in the DOM?</h2>
+            <hr> <hr> <hr>
+            <p class="text-xl my-3 pl-3">Event bubbling is a type of DOM event propagation where the event first triggers on the innermost target <br>
                 element, and then successively triggers on the ancestors (parents) of the target element in the same nesting
                 <br>
-                hierarchy till it reaches the outermost DOM element or document object</p>
-            <hr> <hr> <hr>
+                hierarchy till it reaches the outermost DOM element or document object.</p>
         </div>
-        <div class="p-4"><h2 class="font-bold text-2xl">Question-5: How do you create, add, and remove elements using JavaScript?</h2>
-            <p class="text-xl my-3">For create element: <br>
+        <div class="m-5 bg-gray-100 shadow-lg p-2 rounded-lg"><h2 class="font-bold text-2xl">Question-5: How do you create, add, and remove elements using JavaScript?</h2>
+            <hr> <hr> <hr>
+            <p class="text-xl my-3 pl-3">For create element: <br>
                 const para = document.createElement("p"); <br>
                 <br>
                 For add element: <br>
@@ -71,7 +76,6 @@
                 removeChild() instruction. document. getElementById("child"). remove();
     
             </p>
-         <hr> <hr> <hr>
         </div>
 
     </main>
