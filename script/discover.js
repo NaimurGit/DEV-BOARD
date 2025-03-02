@@ -1,4 +1,4 @@
 document.getElementById("discover-today").
 addEventListener("click", function(){
-    window.location.href="./Question.html"
+    window.location.href="./blog.html"
 })
