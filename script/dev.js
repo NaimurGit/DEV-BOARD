@@ -1,4 +1,5 @@
 const completeButtons= document.querySelectorAll(".complete-task");
+
 for(let i = 0; i < completeButtons.length; i++){
     const completeBtn= completeButtons[i];
     completeBtn.addEventListener("click", function(event){
@@ -8,6 +9,7 @@ for(let i = 0; i < completeButtons.length; i++){
         const currentTask= parseInt(document.getElementById("Task-Count").innerText);
         const TotalCompletejob= parseInt(document.getElementById("Complete-Task-Count").innerText);
         const remainingTask= currentTask - completeTask;
+
         if(remainingTask === 0){
             alert("Congratulation your job is done. Now you can enjoy.");
         }
@@ -16,7 +18,8 @@ for(let i = 0; i < completeButtons.length; i++){
         document.getElementById("Complete-Task-Count").innerText= numOfCompleteJob;
 
         const taskTitle= document.querySelectorAll(".title")[i].innerText;
-        // Get real-time time
+        
+        // Get real-time
         const now = new Date();
         const timeString = now.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit', second: '2-digit' });
 
